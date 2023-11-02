@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSocket Client</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="client.js"></script>
+  </head>
+  <body>
+    <div class="notification">
+      <h2>Notificaciones de Viaje</h2>
+      <ul id="notification-list"></ul>
+    </div>
+    <div id="acceptTripModal" class="modal">
+      <div class="modal-content">
+        <h3>Nuevo Viaje Disponible</h3>
+        <p>Origen: <span id="tripOrigin"></span></p>
+        <p>Destino: <span id="tripDestination"></span></p>
+        <p>Precio: <span id="tripFare"></span></p>
+        <p>Tiempo restante: <span id="timeRemaining">30</span> segundos</p>
+        <div class="modal-buttons">
+          <button id="acceptButton">Aceptar</button>
+          <button id="counterOfferButton">Contraoferta</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
